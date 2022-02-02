@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        var newPopup;
+        function popups() {
+            newPopup = window.open("", "PopupWindow", "height=250,width=250,screenX=200,screenY=200");
+            var popContent =
+                '<HTML><HEAD><TITLE>GetAdvertise</TITLE></HEAD><BODY ';
+            popContent +=
+                '<h1>here our advertise using popup</h1>';
+            popContent += '</BODY></HTML>';
+            newPopup.document.write(popContent);
+            newPopup.document.close();
+            newPopup.focus();
+        }
+
+        function fun() {
+            setTimeout(popups, 1000);
+
+
+
+        }
+
+
+        function stop() {
+
+            newPopup.close();
+        }
+
+
+
+    </script>
+</head>
+
+<body>
+    <a href="#" onclick="fun()">get pop</a>
+    <br>
+    <br><a href="#" onclick="stop()">cancel pop</a>
+</body>
+
+</html>
