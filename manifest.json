@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "my notes",
+    "version": "1.0",
+    "description": "my notes extension",
+    
+    "icons": {
+        "128": "pop128.png",
+        "48": "pop48.png",
+        "16": "pop16.png"
+    },
+    "browser_action": {
+        "default_icon": "pop16.png",
+        "default_popup": "popup.html"
+    },
+ 
+
+
+    "permissions": [
+        "storage",
+      "notifications"
+    ]
+} 
